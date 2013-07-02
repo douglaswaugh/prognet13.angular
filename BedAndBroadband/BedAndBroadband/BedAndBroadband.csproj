@@ -50,7 +50,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Data, Version=0.18.3.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Simple.Data, Version=0.18.3.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Simple.Data.Core.1.0.0-rc3\lib\net40\Simple.Data.dll</HintPath>
     </Reference>
@@ -109,6 +109,13 @@
       <DependentUpon>HomeController.ts</DependentUpon>
     </Content>
     <TypeScriptCompile Include="App\references.ts" />
+    <TypeScriptCompile Include="App\Models\Hotel.ts" />
+    <Content Include="App\Models\Hotel.js">
+      <DependentUpon>Hotel.ts</DependentUpon>
+    </Content>
+    <Content Include="App\Models\Hotel.min.js">
+      <DependentUpon>Hotel.ts</DependentUpon>
+    </Content>
     <Content Include="App\references.js">
       <DependentUpon>references.ts</DependentUpon>
     </Content>
@@ -121,6 +128,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\jasmine\jasmine.css" />
+    <Content Include="Content\jasmine\jasmine_favicon.png" />
     <Content Include="Content\site.css" />
     <Content Include="Gruntfile.js" />
     <Content Include="Html\home.html" />
@@ -429,7 +438,14 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
+    <Content Include="Scripts\jasmine\jasmine-html.js" />
+    <Content Include="Scripts\jasmine\jasmine.js" />
+    <Content Include="Scripts\jasmine\MIT.LICENSE" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jasmine-samples\Player.js" />
+    <Content Include="Scripts\jasmine-samples\PlayerSpec.js" />
+    <Content Include="Scripts\jasmine-samples\Song.js" />
+    <Content Include="Scripts\jasmine-samples\SpecHelper.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\sugar-full.development.js" />
@@ -441,12 +457,20 @@
     <Content Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <Content Include="Scripts\typings\angularjs\angular-scenario.d.ts" />
     <Content Include="Scripts\typings\angularjs\angular.d.ts" />
+    <Content Include="Scripts\typings\jasmine\jasmine.d.ts" />
     <Content Include="Scripts\typings\jquery\jquery.d.ts" />
     <Content Include="Scripts\typings\sugar\sugar.d.ts" />
     <Content Include="Scripts\ui-bootstrap-0.3.0.js" />
     <Content Include="Scripts\ui-bootstrap-0.3.0.min.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-0.3.0.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-0.3.0.min.js" />
+    <TypeScriptCompile Include="Tests\HomeControllerTests.ts" />
+    <Content Include="Tests\HomeControllerTests.js">
+      <DependentUpon>HomeControllerTests.ts</DependentUpon>
+    </Content>
+    <Content Include="Tests\HomeControllerTests.min.js">
+      <DependentUpon>HomeControllerTests.ts</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>

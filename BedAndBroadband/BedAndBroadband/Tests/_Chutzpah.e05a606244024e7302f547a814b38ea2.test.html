@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Jasmine Spec Runner</title>
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/Administrator/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/zjpfuhjk.yy3/TestFiles/jasmine/jasmine.css"/>
+<script type="text/javascript" src="file:///C:/Users/Administrator/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/zjpfuhjk.yy3/TestFiles/jasmine/jasmine.js"></script>
+<script type="text/javascript" src="file:///C:/Users/Administrator/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/zjpfuhjk.yy3/TestFiles/jasmine/jasmine-html.js"></script>
+<link rel="shortcut icon" type="image/png" href="file:///C:/Users/Administrator/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/zjpfuhjk.yy3/TestFiles/jasmine/jasmine_favicon.png"/>
+<script type="text/javascript" src="file:///C:/Users/Administrator/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/zjpfuhjk.yy3/TestFiles/jasmine/jasmine-ddescribe-iit.js"></script>
+
+    
+    <script type="text/javascript" src="file:///C:/apps/Prognet2013/angular/ProgNet13/ProgNet13-master/BedAndBroadband/BedAndBroadband/Scripts/sugar-full.development.js"></script>
+<script type="text/javascript" src="file:///C:/apps/Prognet2013/angular/ProgNet13/ProgNet13-master/BedAndBroadband/BedAndBroadband/Scripts/angular.js"></script>
+<script type="text/javascript" src="file:///C:/apps/Prognet2013/angular/ProgNet13/ProgNet13-master/BedAndBroadband/BedAndBroadband/Scripts/angular-mocks.js"></script>
+<script type="text/javascript" src="file:///C:/apps/Prognet2013/angular/ProgNet13/ProgNet13-master/BedAndBroadband/BedAndBroadband/Scripts/app.js"></script>
+
+    <script type="text/javascript" src="file:///C:/apps/Prognet2013/angular/ProgNet13/ProgNet13-master/BedAndBroadband/BedAndBroadband/Tests/_Chutzpah.1.HomeControllerTests.js"></script>
+
+    <script type="text/javascript">      
+        (function () {
+            var jasmineEnv = jasmine.getEnv();
+            jasmineEnv.updateInterval = 1000;
+
+            var htmlReporter = new jasmine.HtmlReporter();
+
+            jasmineEnv.addReporter(htmlReporter);
+
+            jasmineEnv.specFilter = function (spec) {
+                return htmlReporter.specFilter(spec);
+            };
+
+            if (ddescribeIitSupport) {
+                ddescribeIitSupport.patch(jasmineEnv);
+            }
+
+            var currentWindowOnload = window.onload;
+
+            window.onload = function () {
+                if (currentWindowOnload) {
+                    currentWindowOnload();
+                }
+
+                jasmineEnv.execute();
+            };
+
+        })();
+    </script>
+</head>
+<body>
+</body>
+</html>
